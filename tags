@@ -1,0 +1,323 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	main.cpp	/^class A{$/;"	c	file:
+A::a	main.cpp	/^	int a,b,c;$/;"	m	class:A	file:	access:public
+A::b	main.cpp	/^	int a,b,c;$/;"	m	class:A	file:	access:public
+A::c	main.cpp	/^	int a,b,c;$/;"	m	class:A	file:	access:public
+COLOR_H	color.h	2;"	d
+CheckMaterial	material.h	/^		CheckMaterial():scale(0.1){reflectiveness=1;}$/;"	f	class:CheckMaterial	access:public	signature:()
+CheckMaterial	material.h	/^		CheckMaterial(float s, float r):scale(s)$/;"	f	class:CheckMaterial	access:public	signature:(float s, float r)
+CheckMaterial	material.h	/^class CheckMaterial:public Material$/;"	c	inherits:Material
+CheckMaterial::CheckMaterial	material.h	/^		CheckMaterial():scale(0.1){reflectiveness=1;}$/;"	f	class:CheckMaterial	access:public	signature:()
+CheckMaterial::CheckMaterial	material.h	/^		CheckMaterial(float s, float r):scale(s)$/;"	f	class:CheckMaterial	access:public	signature:(float s, float r)
+CheckMaterial::sample	material.cpp	/^Color CheckMaterial::sample(const Ray3& ray, const Vec3& position, const Vec3& normal)$/;"	f	class:CheckMaterial	signature:(const Ray3& ray, const Vec3& position, const Vec3& normal)
+CheckMaterial::sample	material.h	/^		Color sample(const Ray3& ray, const Vec3& position, const Vec3& normal);$/;"	p	class:CheckMaterial	access:public	signature:(const Ray3& ray, const Vec3& position, const Vec3& normal)
+CheckMaterial::scale	material.h	/^		float scale;$/;"	m	class:CheckMaterial	access:private
+Color	color.h	/^		Color():r(0),g(0),b(0){}$/;"	f	class:Color	access:public	signature:()
+Color	color.h	/^		Color(float rr, float gr, float br):r(rr),g(gr),b(br){}$/;"	f	class:Color	access:public	signature:(float rr, float gr, float br)
+Color	color.h	/^class Color$/;"	c
+Color::Color	color.h	/^		Color():r(0),g(0),b(0){}$/;"	f	class:Color	access:public	signature:()
+Color::Color	color.h	/^		Color(float rr, float gr, float br):r(rr),g(gr),b(br){}$/;"	f	class:Color	access:public	signature:(float rr, float gr, float br)
+Color::add	color.h	/^		Color add(Color c){return Color( r+c.r, g+c.g, b+c.b);}$/;"	f	class:Color	access:public	signature:(Color c)
+Color::b	color.h	/^		float r,g,b;$/;"	m	class:Color	access:private
+Color::black	color.cpp	/^const Color Color::black = Color(0,0,0);$/;"	m	class:Color	file:
+Color::black	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+Color::blue	color.cpp	/^const Color Color::blue = Color(0,0,1);$/;"	m	class:Color	file:
+Color::blue	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+Color::g	color.h	/^		float r,g,b;$/;"	m	class:Color	access:private
+Color::getB	color.h	/^		float getB()const{return b;}$/;"	f	class:Color	access:public	signature:() const
+Color::getG	color.h	/^		float getG()const{return g;}$/;"	f	class:Color	access:public	signature:() const
+Color::getR	color.h	/^		float getR()const{return r;}$/;"	f	class:Color	access:public	signature:() const
+Color::green	color.cpp	/^const Color Color::green = Color(0,1,0);$/;"	m	class:Color	file:
+Color::green	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+Color::modulate	color.h	/^		Color modulate(Color c){return Color(r*c.r, g*c.g, b*c.b);}$/;"	f	class:Color	access:public	signature:(Color c)
+Color::multiply	color.h	/^		Color multiply(float s){return Color(r*s,g*s,b*s);}$/;"	f	class:Color	access:public	signature:(float s)
+Color::r	color.h	/^		float r,g,b;$/;"	m	class:Color	access:private
+Color::red	color.cpp	/^const Color Color::red = Color(1,0,0);$/;"	m	class:Color	file:
+Color::red	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+Color::setB	color.h	/^		void setB(float br){b=br;}$/;"	f	class:Color	access:public	signature:(float br)
+Color::setG	color.h	/^		void setG(float gr){g=gr;}$/;"	f	class:Color	access:public	signature:(float gr)
+Color::setR	color.h	/^		void setR(float rr){r=rr;}$/;"	f	class:Color	access:public	signature:(float rr)
+Color::white	color.cpp	/^const Color Color::white = Color(1,1,1);$/;"	m	class:Color	file:
+Color::white	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+DirectionalLight	light.h	/^		DirectionalLight(Vec3 &direction)$/;"	f	class:DirectionalLight	access:public	signature:(Vec3 &direction)
+DirectionalLight	light.h	/^class DirectionalLight $/;"	c
+DirectionalLight::DirectionalLight	light.h	/^		DirectionalLight(Vec3 &direction)$/;"	f	class:DirectionalLight	access:public	signature:(Vec3 &direction)
+DirectionalLight::L	light.h	/^		Vec3 L;$/;"	m	class:DirectionalLight	access:public
+DirectionalLight::direction	light.h	/^		Vec3 direction;$/;"	m	class:DirectionalLight	access:public
+DirectionalLight::sample	light.h	/^		Vec3 sample(Object& scene, Vec3& position)$/;"	f	class:DirectionalLight	access:public	signature:(Object& scene, Vec3& position)
+DirectionalLight::shadow	light.h	/^		bool shadow=true;$/;"	m	class:DirectionalLight	access:public
+GEOOBJ_H	geoobj.h	2;"	d
+Image	main.cpp	/^void Image()$/;"	f	signature:()
+IntersectResult	geoobj.h	/^		IntersectResult():geometry(NULL),distance(0),position(Vec3::zero),normal(Vec3::zero){}$/;"	f	class:IntersectResult	access:public	signature:()
+IntersectResult	geoobj.h	/^class IntersectResult$/;"	c
+IntersectResult::IntersectResult	geoobj.h	/^		IntersectResult():geometry(NULL),distance(0),position(Vec3::zero),normal(Vec3::zero){}$/;"	f	class:IntersectResult	access:public	signature:()
+IntersectResult::distance	geoobj.h	/^		float distance;$/;"	m	class:IntersectResult	access:private
+IntersectResult::geometry	geoobj.h	/^		Object *geometry;$/;"	m	class:IntersectResult	access:private
+IntersectResult::getDistance	geoobj.h	/^		float getDistance()const{return distance;}$/;"	f	class:IntersectResult	access:public	signature:() const
+IntersectResult::getGeometry	geoobj.h	/^		Object* getGeometry()const{return geometry;}$/;"	f	class:IntersectResult	access:public	signature:() const
+IntersectResult::getNormal	geoobj.h	/^		Vec3& getNormal()$/;"	f	class:IntersectResult	access:public	signature:()
+IntersectResult::getPosition	geoobj.h	/^		Vec3& getPosition()$/;"	f	class:IntersectResult	access:public	signature:()
+IntersectResult::normal	geoobj.h	/^		Vec3 normal;$/;"	m	class:IntersectResult	access:private
+IntersectResult::position	geoobj.h	/^		Vec3 position;$/;"	m	class:IntersectResult	access:private
+IntersectResult::setDistance	geoobj.cpp	/^void IntersectResult::setDistance(float rhs)$/;"	f	class:IntersectResult	signature:(float rhs)
+IntersectResult::setDistance	geoobj.h	/^		void setDistance(float);$/;"	p	class:IntersectResult	access:public	signature:(float)
+IntersectResult::setGeometry	geoobj.cpp	/^void IntersectResult::setGeometry(Object* rhs)$/;"	f	class:IntersectResult	signature:(Object* rhs)
+IntersectResult::setGeometry	geoobj.h	/^		void setGeometry(Object*);$/;"	p	class:IntersectResult	access:public	signature:(Object*)
+IntersectResult::setNormal	geoobj.cpp	/^void IntersectResult::setNormal(const Vec3& rhs)$/;"	f	class:IntersectResult	signature:(const Vec3& rhs)
+IntersectResult::setNormal	geoobj.h	/^		void setNormal(const Vec3&);$/;"	p	class:IntersectResult	access:public	signature:(const Vec3&)
+IntersectResult::setPosition	geoobj.cpp	/^void IntersectResult::setPosition(const Vec3& rhs)$/;"	f	class:IntersectResult	signature:(const Vec3& rhs)
+IntersectResult::setPosition	geoobj.h	/^		void setPosition(const Vec3&);$/;"	p	class:IntersectResult	access:public	signature:(const Vec3&)
+L	light.h	/^		Vec3 L;$/;"	m	class:DirectionalLight	access:public
+LIGHT_H	light.h	2;"	d
+MATERIAL_H	material.h	2;"	d
+Material	material.h	/^class Material$/;"	c
+Material::getReflectiveness	material.h	/^		float getReflectiveness()const{return reflectiveness;}$/;"	f	class:Material	access:public	signature:() const
+Material::reflectiveness	material.h	/^		float reflectiveness;$/;"	m	class:Material	access:protected
+Material::sample	material.h	/^		virtual Color sample(const Ray3& ray, const Vec3& position, const Vec3& normal) = 0;$/;"	p	class:Material	access:public	signature:(const Ray3& ray, const Vec3& position, const Vec3& normal)
+Min	main.cpp	/^int Min(int a, int b)$/;"	f	signature:(int a, int b)
+Null	geoobj.h	/^enum object_type{Null,SPHERE,PLANE};$/;"	e	enum:object_type
+Object	geoobj.h	/^class Object$/;"	c
+Object::intersect	geoobj.h	/^		virtual IntersectResult intersect(Ray3 ray)=0;$/;"	p	class:Object	access:public	signature:(Ray3 ray)
+Object::material	geoobj.h	/^		Material *material;$/;"	m	class:Object	access:public
+PERSPECTIVECAMERA_H	percamera.h	2;"	d
+PLANE	geoobj.h	/^enum object_type{Null,SPHERE,PLANE};$/;"	e	enum:object_type
+PerspectiveCamera	percamera.h	/^		PerspectiveCamera(const Vec3& eye, const Vec3& front, const Vec3& up,float fov){$/;"	f	class:PerspectiveCamera	access:public	signature:(const Vec3& eye, const Vec3& front, const Vec3& up,float fov)
+PerspectiveCamera	percamera.h	/^class PerspectiveCamera$/;"	c
+PerspectiveCamera::PerspectiveCamera	percamera.h	/^		PerspectiveCamera(const Vec3& eye, const Vec3& front, const Vec3& up,float fov){$/;"	f	class:PerspectiveCamera	access:public	signature:(const Vec3& eye, const Vec3& front, const Vec3& up,float fov)
+PerspectiveCamera::eye	percamera.h	/^		Vec3 eye;$/;"	m	class:PerspectiveCamera	access:public
+PerspectiveCamera::fov	percamera.h	/^		float fov;$/;"	m	class:PerspectiveCamera	access:public
+PerspectiveCamera::fovScale	percamera.h	/^		float fovScale;$/;"	m	class:PerspectiveCamera	access:private
+PerspectiveCamera::front	percamera.h	/^		Vec3 front;$/;"	m	class:PerspectiveCamera	access:public
+PerspectiveCamera::generateRay	percamera.cpp	/^Ray3 PerspectiveCamera::generateRay(float x, float y)$/;"	f	class:PerspectiveCamera	signature:(float x, float y)
+PerspectiveCamera::generateRay	percamera.h	/^		Ray3 generateRay(float,float);$/;"	p	class:PerspectiveCamera	access:public	signature:(float,float)
+PerspectiveCamera::refUp	percamera.h	/^		Vec3 refUp;$/;"	m	class:PerspectiveCamera	access:public
+PerspectiveCamera::right	percamera.h	/^		Vec3 right;$/;"	m	class:PerspectiveCamera	access:private
+PerspectiveCamera::up	percamera.h	/^		Vec3 up;$/;"	m	class:PerspectiveCamera	access:private
+PhongMaterial	material.h	/^		PhongMaterial()$/;"	f	class:PhongMaterial	access:public	signature:()
+PhongMaterial	material.h	/^		PhongMaterial(Color dif, Color spec, float shi, float refl):diffuse(dif), specular(spec), shininess(shi){reflectiveness=refl;}$/;"	f	class:PhongMaterial	access:public	signature:(Color dif, Color spec, float shi, float refl)
+PhongMaterial	material.h	/^class PhongMaterial:public Material$/;"	c	inherits:Material
+PhongMaterial::PhongMaterial	material.h	/^		PhongMaterial()$/;"	f	class:PhongMaterial	access:public	signature:()
+PhongMaterial::PhongMaterial	material.h	/^		PhongMaterial(Color dif, Color spec, float shi, float refl):diffuse(dif), specular(spec), shininess(shi){reflectiveness=refl;}$/;"	f	class:PhongMaterial	access:public	signature:(Color dif, Color spec, float shi, float refl)
+PhongMaterial::diffuse	material.h	/^		Color diffuse,specular;$/;"	m	class:PhongMaterial	access:private
+PhongMaterial::sample	material.cpp	/^Color PhongMaterial::sample(const Ray3& ray, const Vec3& position, const Vec3& normal)$/;"	f	class:PhongMaterial	signature:(const Ray3& ray, const Vec3& position, const Vec3& normal)
+PhongMaterial::sample	material.h	/^		Color sample(const Ray3& ray3, const Vec3& position, const Vec3& normal);$/;"	p	class:PhongMaterial	access:public	signature:(const Ray3& ray3, const Vec3& position, const Vec3& normal)
+PhongMaterial::shininess	material.h	/^		float shininess;\/\/reflectiveness;$/;"	m	class:PhongMaterial	access:private
+PhongMaterial::specular	material.h	/^		Color diffuse,specular;$/;"	m	class:PhongMaterial	access:private
+Plane	geoobj.cpp	/^Plane::Plane(const Vec3& norm, const float dis, Material* mat):normal(norm),distance(dis)$/;"	f	class:Plane	signature:(const Vec3& norm, const float dis, Material* mat)
+Plane	geoobj.h	/^		Plane(const Vec3& norm, const float dis, Material* mat);$/;"	p	class:Plane	access:public	signature:(const Vec3& norm, const float dis, Material* mat)
+Plane	geoobj.h	/^class Plane:public Object$/;"	c	inherits:Object
+Plane::Plane	geoobj.cpp	/^Plane::Plane(const Vec3& norm, const float dis, Material* mat):normal(norm),distance(dis)$/;"	f	class:Plane	signature:(const Vec3& norm, const float dis, Material* mat)
+Plane::Plane	geoobj.h	/^		Plane(const Vec3& norm, const float dis, Material* mat);$/;"	p	class:Plane	access:public	signature:(const Vec3& norm, const float dis, Material* mat)
+Plane::distance	geoobj.h	/^		float distance;$/;"	m	class:Plane	access:private
+Plane::intersect	geoobj.cpp	/^IntersectResult Plane::intersect(Ray3 ray)$/;"	f	class:Plane	signature:(Ray3 ray)
+Plane::intersect	geoobj.h	/^		IntersectResult intersect(Ray3 ray);$/;"	p	class:Plane	access:public	signature:(Ray3 ray)
+Plane::normal	geoobj.h	/^		Vec3 normal;$/;"	m	class:Plane	access:private
+Plane::position	geoobj.h	/^		Vec3 position;$/;"	m	class:Plane	access:private
+RAY3_H	ray3.h	2;"	d
+Ray3	ray3.h	/^		Ray3(const Vec3& origin, const Vec3& direction)$/;"	f	class:Ray3	access:public	signature:(const Vec3& origin, const Vec3& direction)
+Ray3	ray3.h	/^class Ray3{$/;"	c
+Ray3::Ray3	ray3.h	/^		Ray3(const Vec3& origin, const Vec3& direction)$/;"	f	class:Ray3	access:public	signature:(const Vec3& origin, const Vec3& direction)
+Ray3::direction	ray3.h	/^		Vec3 direction;	$/;"	m	class:Ray3	access:private
+Ray3::getDirection	ray3.cpp	/^Vec3 Ray3::getDirection()const$/;"	f	class:Ray3	signature:() const
+Ray3::getDirection	ray3.h	/^		Vec3 getDirection()const;$/;"	p	class:Ray3	access:public	signature:() const
+Ray3::getOrigin	ray3.cpp	/^Vec3 Ray3::getOrigin()const$/;"	f	class:Ray3	signature:() const
+Ray3::getOrigin	ray3.h	/^		Vec3 getOrigin()const;$/;"	p	class:Ray3	access:public	signature:() const
+Ray3::getPoint	ray3.cpp	/^Vec3 Ray3::getPoint(float t)const$/;"	f	class:Ray3	signature:(float t) const
+Ray3::getPoint	ray3.h	/^		Vec3 getPoint(float)const;$/;"	p	class:Ray3	access:public	signature:(float) const
+Ray3::origin	ray3.h	/^		Vec3 origin;$/;"	m	class:Ray3	access:private
+SPHERE	geoobj.h	/^enum object_type{Null,SPHERE,PLANE};$/;"	e	enum:object_type
+Sphere	geoobj.cpp	/^Sphere::Sphere(const Vec3& center, const float radius, Material* mat) 	\/\/ I can't write material(mat) here. It may be a bug of g++. It can't initialize a member from base class.$/;"	f	class:Sphere	signature:(const Vec3& center, const float radius, Material* mat)
+Sphere	geoobj.h	/^		Sphere(const Vec3&, const float, Material*);$/;"	p	class:Sphere	access:public	signature:(const Vec3&, const float, Material*)
+Sphere	geoobj.h	/^class Sphere:public Object$/;"	c	inherits:Object
+Sphere::Sphere	geoobj.cpp	/^Sphere::Sphere(const Vec3& center, const float radius, Material* mat) 	\/\/ I can't write material(mat) here. It may be a bug of g++. It can't initialize a member from base class.$/;"	f	class:Sphere	signature:(const Vec3& center, const float radius, Material* mat)
+Sphere::Sphere	geoobj.h	/^		Sphere(const Vec3&, const float, Material*);$/;"	p	class:Sphere	access:public	signature:(const Vec3&, const float, Material*)
+Sphere::center	geoobj.h	/^		Vec3 center;$/;"	m	class:Sphere	access:private
+Sphere::intersect	geoobj.cpp	/^IntersectResult Sphere::intersect(Ray3 ray)$/;"	f	class:Sphere	signature:(Ray3 ray)
+Sphere::intersect	geoobj.h	/^		IntersectResult intersect(Ray3 ray);$/;"	p	class:Sphere	access:public	signature:(Ray3 ray)
+Sphere::radius	geoobj.h	/^		float radius;$/;"	m	class:Sphere	access:private
+Sphere::sqRadius	geoobj.h	/^		float sqRadius;$/;"	m	class:Sphere	access:private
+Union	geoobj.h	/^class Union:public Object$/;"	c	inherits:Object
+Union::intersect	geoobj.cpp	/^IntersectResult Union::intersect(Ray3 ray)$/;"	f	class:Union	signature:(Ray3 ray)
+Union::intersect	geoobj.h	/^		IntersectResult intersect(Ray3 ray);$/;"	p	class:Union	access:public	signature:(Ray3 ray)
+Union::objects	geoobj.h	/^		vector<Object *> objects;$/;"	m	class:Union	access:public
+VEC3_H	vec3.h	2;"	d
+Vec3	vec3.h	/^		Vec3():x(0),y(0),z(0){}$/;"	f	class:Vec3	access:public	signature:()
+Vec3	vec3.h	/^		Vec3(const Vec3& vec):x(vec.x),y(vec.y),z(vec.z){}$/;"	f	class:Vec3	access:public	signature:(const Vec3& vec)
+Vec3	vec3.h	/^		Vec3(float xr,float yr,float zr):x(xr),y(yr),z(zr){}$/;"	f	class:Vec3	access:public	signature:(float xr,float yr,float zr)
+Vec3	vec3.h	/^class Vec3{$/;"	c
+Vec3::Vec3	vec3.h	/^		Vec3():x(0),y(0),z(0){}$/;"	f	class:Vec3	access:public	signature:()
+Vec3::Vec3	vec3.h	/^		Vec3(const Vec3& vec):x(vec.x),y(vec.y),z(vec.z){}$/;"	f	class:Vec3	access:public	signature:(const Vec3& vec)
+Vec3::Vec3	vec3.h	/^		Vec3(float xr,float yr,float zr):x(xr),y(yr),z(zr){}$/;"	f	class:Vec3	access:public	signature:(float xr,float yr,float zr)
+Vec3::add	vec3.cpp	/^Vec3 Vec3::add(const Vec3 &vec)const$/;"	f	class:Vec3	signature:(const Vec3 &vec) const
+Vec3::add	vec3.h	/^		Vec3 add(const Vec3&)const;$/;"	p	class:Vec3	access:public	signature:(const Vec3&) const
+Vec3::copy	vec3.cpp	/^Vec3& Vec3::copy()$/;"	f	class:Vec3	signature:()
+Vec3::copy	vec3.h	/^		Vec3& copy(); 	\/\/ no use. special for JavaScript$/;"	p	class:Vec3	access:public	signature:()
+Vec3::cross	vec3.cpp	/^Vec3 Vec3::cross(const Vec3& vec)const$/;"	f	class:Vec3	signature:(const Vec3& vec) const
+Vec3::cross	vec3.h	/^		Vec3 cross(const Vec3&)const;$/;"	p	class:Vec3	access:public	signature:(const Vec3&) const
+Vec3::divide	vec3.cpp	/^Vec3 Vec3::divide(const float f)const$/;"	f	class:Vec3	signature:(const float f) const
+Vec3::divide	vec3.h	/^		Vec3 divide(const float)const;$/;"	p	class:Vec3	access:public	signature:(const float) const
+Vec3::dot	vec3.cpp	/^float Vec3::dot(const Vec3& vec)const$/;"	f	class:Vec3	signature:(const Vec3& vec) const
+Vec3::dot	vec3.h	/^		float dot(const Vec3&)const;$/;"	p	class:Vec3	access:public	signature:(const Vec3&) const
+Vec3::getx	vec3.cpp	/^float Vec3::getx()const$/;"	f	class:Vec3	signature:() const
+Vec3::getx	vec3.h	/^		float getx()const;$/;"	p	class:Vec3	access:public	signature:() const
+Vec3::gety	vec3.cpp	/^float Vec3::gety()const$/;"	f	class:Vec3	signature:() const
+Vec3::gety	vec3.h	/^		float gety()const;$/;"	p	class:Vec3	access:public	signature:() const
+Vec3::getz	vec3.cpp	/^float Vec3::getz()const$/;"	f	class:Vec3	signature:() const
+Vec3::getz	vec3.h	/^		float getz()const;$/;"	p	class:Vec3	access:public	signature:() const
+Vec3::length	vec3.cpp	/^float Vec3::length()const$/;"	f	class:Vec3	signature:() const
+Vec3::length	vec3.h	/^		float length()const;$/;"	p	class:Vec3	access:public	signature:() const
+Vec3::multiply	vec3.cpp	/^Vec3 Vec3::multiply(const float f)const$/;"	f	class:Vec3	signature:(const float f) const
+Vec3::multiply	vec3.h	/^		Vec3 multiply(const float)const;$/;"	p	class:Vec3	access:public	signature:(const float) const
+Vec3::negate	vec3.cpp	/^Vec3 Vec3::negate()const$/;"	f	class:Vec3	signature:() const
+Vec3::negate	vec3.h	/^		Vec3 negate()const;$/;"	p	class:Vec3	access:public	signature:() const
+Vec3::normalize	vec3.cpp	/^Vec3 Vec3::normalize()const$/;"	f	class:Vec3	signature:() const
+Vec3::normalize	vec3.h	/^		Vec3 normalize()const;$/;"	p	class:Vec3	access:public	signature:() const
+Vec3::sqLength	vec3.cpp	/^float Vec3::sqLength()const$/;"	f	class:Vec3	signature:() const
+Vec3::sqLength	vec3.h	/^		float sqLength()const;$/;"	p	class:Vec3	access:public	signature:() const
+Vec3::substract	vec3.cpp	/^Vec3 Vec3::substract(const Vec3 &vec)const$/;"	f	class:Vec3	signature:(const Vec3 &vec) const
+Vec3::substract	vec3.h	/^		Vec3 substract(const Vec3&)const;$/;"	p	class:Vec3	access:public	signature:(const Vec3&) const
+Vec3::x	vec3.h	/^		float x,y,z;$/;"	m	class:Vec3	access:private
+Vec3::y	vec3.h	/^		float x,y,z;$/;"	m	class:Vec3	access:private
+Vec3::z	vec3.h	/^		float x,y,z;$/;"	m	class:Vec3	access:private
+Vec3::zero	vec3.cpp	/^const Vec3 Vec3::zero=Vec3(0,0,0); 	\/\/ even if zero is private, this def is ok$/;"	m	class:Vec3	file:
+Vec3::zero	vec3.h	/^		const static Vec3 zero; 	\/\/ as a declaration, not a definition$/;"	m	class:Vec3	access:public
+X_RES	main.cpp	10;"	d	file:
+Y_RES	main.cpp	11;"	d	file:
+a	main.cpp	/^	int a,b,c;$/;"	m	class:A	file:	access:public
+add	color.h	/^		Color add(Color c){return Color( r+c.r, g+c.g, b+c.b);}$/;"	f	class:Color	access:public	signature:(Color c)
+add	vec3.cpp	/^Vec3 Vec3::add(const Vec3 &vec)const$/;"	f	class:Vec3	signature:(const Vec3 &vec) const
+add	vec3.h	/^		Vec3 add(const Vec3&)const;$/;"	p	class:Vec3	access:public	signature:(const Vec3&) const
+b	color.h	/^		float r,g,b;$/;"	m	class:Color	access:private
+b	main.cpp	/^	int a,b,c;$/;"	m	class:A	file:	access:public
+black	color.cpp	/^const Color Color::black = Color(0,0,0);$/;"	m	class:Color	file:
+black	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+blue	color.cpp	/^const Color Color::blue = Color(0,0,1);$/;"	m	class:Color	file:
+blue	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+c	main.cpp	/^	int a,b,c;$/;"	m	class:A	file:	access:public
+center	geoobj.h	/^		Vec3 center;$/;"	m	class:Sphere	access:private
+copy	vec3.cpp	/^Vec3& Vec3::copy()$/;"	f	class:Vec3	signature:()
+copy	vec3.h	/^		Vec3& copy(); 	\/\/ no use. special for JavaScript$/;"	p	class:Vec3	access:public	signature:()
+cross	vec3.cpp	/^Vec3 Vec3::cross(const Vec3& vec)const$/;"	f	class:Vec3	signature:(const Vec3& vec) const
+cross	vec3.h	/^		Vec3 cross(const Vec3&)const;$/;"	p	class:Vec3	access:public	signature:(const Vec3&) const
+diffuse	material.h	/^		Color diffuse,specular;$/;"	m	class:PhongMaterial	access:private
+direction	light.h	/^		Vec3 direction;$/;"	m	class:DirectionalLight	access:public
+direction	ray3.h	/^		Vec3 direction;	$/;"	m	class:Ray3	access:private
+display	main.cpp	/^void display()$/;"	f	signature:()
+distance	geoobj.h	/^		float distance;$/;"	m	class:IntersectResult	access:private
+distance	geoobj.h	/^		float distance;$/;"	m	class:Plane	access:private
+divide	vec3.cpp	/^Vec3 Vec3::divide(const float f)const$/;"	f	class:Vec3	signature:(const float f) const
+divide	vec3.h	/^		Vec3 divide(const float)const;$/;"	p	class:Vec3	access:public	signature:(const float) const
+dot	vec3.cpp	/^float Vec3::dot(const Vec3& vec)const$/;"	f	class:Vec3	signature:(const Vec3& vec) const
+dot	vec3.h	/^		float dot(const Vec3&)const;$/;"	p	class:Vec3	access:public	signature:(const Vec3&) const
+eye	percamera.h	/^		Vec3 eye;$/;"	m	class:PerspectiveCamera	access:public
+fbuffer	main.cpp	/^GLubyte fbuffer[X_RES][Y_RES][3];$/;"	v
+fov	percamera.h	/^		float fov;$/;"	m	class:PerspectiveCamera	access:public
+fovScale	percamera.h	/^		float fovScale;$/;"	m	class:PerspectiveCamera	access:private
+front	percamera.h	/^		Vec3 front;$/;"	m	class:PerspectiveCamera	access:public
+g	color.h	/^		float r,g,b;$/;"	m	class:Color	access:private
+generateRay	percamera.cpp	/^Ray3 PerspectiveCamera::generateRay(float x, float y)$/;"	f	class:PerspectiveCamera	signature:(float x, float y)
+generateRay	percamera.h	/^		Ray3 generateRay(float,float);$/;"	p	class:PerspectiveCamera	access:public	signature:(float,float)
+geometry	geoobj.h	/^		Object *geometry;$/;"	m	class:IntersectResult	access:private
+getB	color.h	/^		float getB()const{return b;}$/;"	f	class:Color	access:public	signature:() const
+getDirection	ray3.cpp	/^Vec3 Ray3::getDirection()const$/;"	f	class:Ray3	signature:() const
+getDirection	ray3.h	/^		Vec3 getDirection()const;$/;"	p	class:Ray3	access:public	signature:() const
+getDistance	geoobj.h	/^		float getDistance()const{return distance;}$/;"	f	class:IntersectResult	access:public	signature:() const
+getG	color.h	/^		float getG()const{return g;}$/;"	f	class:Color	access:public	signature:() const
+getGeometry	geoobj.h	/^		Object* getGeometry()const{return geometry;}$/;"	f	class:IntersectResult	access:public	signature:() const
+getNormal	geoobj.h	/^		Vec3& getNormal()$/;"	f	class:IntersectResult	access:public	signature:()
+getOrigin	ray3.cpp	/^Vec3 Ray3::getOrigin()const$/;"	f	class:Ray3	signature:() const
+getOrigin	ray3.h	/^		Vec3 getOrigin()const;$/;"	p	class:Ray3	access:public	signature:() const
+getPoint	ray3.cpp	/^Vec3 Ray3::getPoint(float t)const$/;"	f	class:Ray3	signature:(float t) const
+getPoint	ray3.h	/^		Vec3 getPoint(float)const;$/;"	p	class:Ray3	access:public	signature:(float) const
+getPosition	geoobj.h	/^		Vec3& getPosition()$/;"	f	class:IntersectResult	access:public	signature:()
+getR	color.h	/^		float getR()const{return r;}$/;"	f	class:Color	access:public	signature:() const
+getReflectiveness	material.h	/^		float getReflectiveness()const{return reflectiveness;}$/;"	f	class:Material	access:public	signature:() const
+getx	vec3.cpp	/^float Vec3::getx()const$/;"	f	class:Vec3	signature:() const
+getx	vec3.h	/^		float getx()const;$/;"	p	class:Vec3	access:public	signature:() const
+gety	vec3.cpp	/^float Vec3::gety()const$/;"	f	class:Vec3	signature:() const
+gety	vec3.h	/^		float gety()const;$/;"	p	class:Vec3	access:public	signature:() const
+getz	vec3.cpp	/^float Vec3::getz()const$/;"	f	class:Vec3	signature:() const
+getz	vec3.h	/^		float getz()const;$/;"	p	class:Vec3	access:public	signature:() const
+green	color.cpp	/^const Color Color::green = Color(0,1,0);$/;"	m	class:Color	file:
+green	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+init	main.cpp	/^void init()$/;"	f	signature:()
+intersect	geoobj.cpp	/^IntersectResult Plane::intersect(Ray3 ray)$/;"	f	class:Plane	signature:(Ray3 ray)
+intersect	geoobj.cpp	/^IntersectResult Sphere::intersect(Ray3 ray)$/;"	f	class:Sphere	signature:(Ray3 ray)
+intersect	geoobj.cpp	/^IntersectResult Union::intersect(Ray3 ray)$/;"	f	class:Union	signature:(Ray3 ray)
+intersect	geoobj.h	/^		IntersectResult intersect(Ray3 ray);$/;"	p	class:Plane	access:public	signature:(Ray3 ray)
+intersect	geoobj.h	/^		IntersectResult intersect(Ray3 ray);$/;"	p	class:Sphere	access:public	signature:(Ray3 ray)
+intersect	geoobj.h	/^		IntersectResult intersect(Ray3 ray);$/;"	p	class:Union	access:public	signature:(Ray3 ray)
+intersect	geoobj.h	/^		virtual IntersectResult intersect(Ray3 ray)=0;$/;"	p	class:Object	access:public	signature:(Ray3 ray)
+length	vec3.cpp	/^float Vec3::length()const$/;"	f	class:Vec3	signature:() const
+length	vec3.h	/^		float length()const;$/;"	p	class:Vec3	access:public	signature:() const
+main	main.cpp	/^int main(int argc, char**argv)$/;"	f	signature:(int argc, char**argv)
+material	geoobj.h	/^		Material *material;$/;"	m	class:Object	access:public
+modulate	color.h	/^		Color modulate(Color c){return Color(r*c.r, g*c.g, b*c.b);}$/;"	f	class:Color	access:public	signature:(Color c)
+multiply	color.h	/^		Color multiply(float s){return Color(r*s,g*s,b*s);}$/;"	f	class:Color	access:public	signature:(float s)
+multiply	vec3.cpp	/^Vec3 Vec3::multiply(const float f)const$/;"	f	class:Vec3	signature:(const float f) const
+multiply	vec3.h	/^		Vec3 multiply(const float)const;$/;"	p	class:Vec3	access:public	signature:(const float) const
+negate	vec3.cpp	/^Vec3 Vec3::negate()const$/;"	f	class:Vec3	signature:() const
+negate	vec3.h	/^		Vec3 negate()const;$/;"	p	class:Vec3	access:public	signature:() const
+normal	geoobj.h	/^		Vec3 normal;$/;"	m	class:IntersectResult	access:private
+normal	geoobj.h	/^		Vec3 normal;$/;"	m	class:Plane	access:private
+normalize	vec3.cpp	/^Vec3 Vec3::normalize()const$/;"	f	class:Vec3	signature:() const
+normalize	vec3.h	/^		Vec3 normalize()const;$/;"	p	class:Vec3	access:public	signature:() const
+object_type	geoobj.h	/^enum object_type{Null,SPHERE,PLANE};$/;"	g
+objects	Makefile	/^objects = main.o vec3.o ray3.o geoobj.o percamera.o material.o color.o$/;"	m
+objects	geoobj.h	/^		vector<Object *> objects;$/;"	m	class:Union	access:public
+origin	ray3.h	/^		Vec3 origin;$/;"	m	class:Ray3	access:private
+position	geoobj.h	/^		Vec3 position;$/;"	m	class:IntersectResult	access:private
+position	geoobj.h	/^		Vec3 position;$/;"	m	class:Plane	access:private
+r	color.h	/^		float r,g,b;$/;"	m	class:Color	access:private
+radius	geoobj.h	/^		float radius;$/;"	m	class:Sphere	access:private
+rayTrace	main.cpp	/^void rayTrace( Object& scene, PerspectiveCamera camera)$/;"	f	signature:( Object& scene, PerspectiveCamera camera)
+rayTrace2	main.cpp	/^void rayTrace2( Sphere scene, PerspectiveCamera camera)$/;"	f	signature:( Sphere scene, PerspectiveCamera camera)
+rayTrace3	main.cpp	/^void rayTrace3( Sphere scene, PerspectiveCamera camera)$/;"	f	signature:( Sphere scene, PerspectiveCamera camera)
+rayTraceRecursive	main.cpp	/^Color rayTraceRecursive(Object &scene, Ray3& ray, int maxReflect)$/;"	f	signature:(Object &scene, Ray3& ray, int maxReflect)
+rayTraceReflection	main.cpp	/^void rayTraceReflection(Object& scene, PerspectiveCamera& camera, int maxReflect)$/;"	f	signature:(Object& scene, PerspectiveCamera& camera, int maxReflect)
+red	color.cpp	/^const Color Color::red = Color(1,0,0);$/;"	m	class:Color	file:
+red	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+refUp	percamera.h	/^		Vec3 refUp;$/;"	m	class:PerspectiveCamera	access:public
+reflectiveness	material.h	/^		float reflectiveness;$/;"	m	class:Material	access:protected
+renderDepth	main.cpp	/^void renderDepth(Sphere scene, PerspectiveCamera camera, int maxDepth)$/;"	f	signature:(Sphere scene, PerspectiveCamera camera, int maxDepth)
+renderNormal	main.cpp	/^void renderNormal(Sphere scene, PerspectiveCamera camera)$/;"	f	signature:(Sphere scene, PerspectiveCamera camera)
+right	percamera.h	/^		Vec3 right;$/;"	m	class:PerspectiveCamera	access:private
+sample	light.h	/^		Vec3 sample(Object& scene, Vec3& position)$/;"	f	class:DirectionalLight	access:public	signature:(Object& scene, Vec3& position)
+sample	material.cpp	/^Color CheckMaterial::sample(const Ray3& ray, const Vec3& position, const Vec3& normal)$/;"	f	class:CheckMaterial	signature:(const Ray3& ray, const Vec3& position, const Vec3& normal)
+sample	material.cpp	/^Color PhongMaterial::sample(const Ray3& ray, const Vec3& position, const Vec3& normal)$/;"	f	class:PhongMaterial	signature:(const Ray3& ray, const Vec3& position, const Vec3& normal)
+sample	material.h	/^		Color sample(const Ray3& ray, const Vec3& position, const Vec3& normal);$/;"	p	class:CheckMaterial	access:public	signature:(const Ray3& ray, const Vec3& position, const Vec3& normal)
+sample	material.h	/^		Color sample(const Ray3& ray3, const Vec3& position, const Vec3& normal);$/;"	p	class:PhongMaterial	access:public	signature:(const Ray3& ray3, const Vec3& position, const Vec3& normal)
+sample	material.h	/^		virtual Color sample(const Ray3& ray, const Vec3& position, const Vec3& normal) = 0;$/;"	p	class:Material	access:public	signature:(const Ray3& ray, const Vec3& position, const Vec3& normal)
+scale	material.h	/^		float scale;$/;"	m	class:CheckMaterial	access:private
+setB	color.h	/^		void setB(float br){b=br;}$/;"	f	class:Color	access:public	signature:(float br)
+setDistance	geoobj.cpp	/^void IntersectResult::setDistance(float rhs)$/;"	f	class:IntersectResult	signature:(float rhs)
+setDistance	geoobj.h	/^		void setDistance(float);$/;"	p	class:IntersectResult	access:public	signature:(float)
+setG	color.h	/^		void setG(float gr){g=gr;}$/;"	f	class:Color	access:public	signature:(float gr)
+setGeometry	geoobj.cpp	/^void IntersectResult::setGeometry(Object* rhs)$/;"	f	class:IntersectResult	signature:(Object* rhs)
+setGeometry	geoobj.h	/^		void setGeometry(Object*);$/;"	p	class:IntersectResult	access:public	signature:(Object*)
+setNormal	geoobj.cpp	/^void IntersectResult::setNormal(const Vec3& rhs)$/;"	f	class:IntersectResult	signature:(const Vec3& rhs)
+setNormal	geoobj.h	/^		void setNormal(const Vec3&);$/;"	p	class:IntersectResult	access:public	signature:(const Vec3&)
+setPosition	geoobj.cpp	/^void IntersectResult::setPosition(const Vec3& rhs)$/;"	f	class:IntersectResult	signature:(const Vec3& rhs)
+setPosition	geoobj.h	/^		void setPosition(const Vec3&);$/;"	p	class:IntersectResult	access:public	signature:(const Vec3&)
+setR	color.h	/^		void setR(float rr){r=rr;}$/;"	f	class:Color	access:public	signature:(float rr)
+shadow	light.h	/^		bool shadow=true;$/;"	m	class:DirectionalLight	access:public
+shininess	material.h	/^		float shininess;\/\/reflectiveness;$/;"	m	class:PhongMaterial	access:private
+specular	material.h	/^		Color diffuse,specular;$/;"	m	class:PhongMaterial	access:private
+sqLength	vec3.cpp	/^float Vec3::sqLength()const$/;"	f	class:Vec3	signature:() const
+sqLength	vec3.h	/^		float sqLength()const;$/;"	p	class:Vec3	access:public	signature:() const
+sqRadius	geoobj.h	/^		float sqRadius;$/;"	m	class:Sphere	access:private
+substract	vec3.cpp	/^Vec3 Vec3::substract(const Vec3 &vec)const$/;"	f	class:Vec3	signature:(const Vec3 &vec) const
+substract	vec3.h	/^		Vec3 substract(const Vec3&)const;$/;"	p	class:Vec3	access:public	signature:(const Vec3&) const
+up	percamera.h	/^		Vec3 up;$/;"	m	class:PerspectiveCamera	access:private
+white	color.cpp	/^const Color Color::white = Color(1,1,1);$/;"	m	class:Color	file:
+white	color.h	/^		const static Color black, white, red, green, blue;$/;"	m	class:Color	access:public
+x	vec3.h	/^		float x,y,z;$/;"	m	class:Vec3	access:private
+y	vec3.h	/^		float x,y,z;$/;"	m	class:Vec3	access:private
+z	vec3.h	/^		float x,y,z;$/;"	m	class:Vec3	access:private
+zero	vec3.cpp	/^const Vec3 Vec3::zero=Vec3(0,0,0); 	\/\/ even if zero is private, this def is ok$/;"	m	class:Vec3	file:
+zero	vec3.h	/^		const static Vec3 zero; 	\/\/ as a declaration, not a definition$/;"	m	class:Vec3	access:public

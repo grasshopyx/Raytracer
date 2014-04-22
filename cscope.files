@@ -1,0 +1,14 @@
+./geoobj.cpp
+./percamera.h
+./material.cpp
+./vec3.h
+./color.h
+./vec3.cpp
+./geoobj.h
+./ray3.h
+./percamera.cpp
+./color.cpp
+./material.h
+./ray3.cpp
+./light.h
+./main.cpp
